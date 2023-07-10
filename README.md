@@ -8,4 +8,4 @@ Thank you mocsharp for your work https://github.com/mocsharp/oviyam-docker
 docker build -t oviyam:2.8.2 .
 ```
 <br>
-Already build image here https://hub.docker.com/r/floringhimie/oviyam <br>
+docker run -itd --restart always -p 80:8080 -p 1025:1025 -v ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml informaticamedica/oviyam:2.8
