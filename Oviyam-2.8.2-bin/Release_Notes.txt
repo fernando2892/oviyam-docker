@@ -1,0 +1,42 @@
+Oviyam 2.8.2 - Change log
+
+Bugs :
+
+  OV-241 Accession Number filter in direct URL launching is not working
+
+  OV-243 Image loading takes longer time to respond on series layout selection
+
+  OV-244 Scrolling is not working in image tiling layout
+
+  OV-249 Some functionalities in viewer page are not working when Oviyam is embedded into an another web application using iframe tag.
+
+Improvements : 
+
+  OV-242 Add provision to disable/enable guideline window shown during pan/zoom operation.
+
+  OV-246 Show suitable error/exception page instead of a blank page when there is no matching patient study found in direct URL launching.
+
+  OV-248 Minor bugfixes and UI enhancements
+
+  OV-250 On windowing changes - Prefetch other images (WADO) of the series applying changed windowing values in the background.
+  
+New Feature :
+
+  OV-245 Option to load only selected series and other series of the study on demand in viewer.
+
+Tasks :
+
+  OV-247 Release 2.8.2
+
+
+Note : 
+    For dcm4chee-arc-light server, the WADO context should be "SERVER-CONTEXT/aets/AETITLE/wado". 
+    Eg. dcm4chee-arc/aets/DCM4CHEE/wado
+
+  
+For Tomcat Server:
+
+1. Copy all jar files from "tomcat" folder into Tomcat "Lib" folder.
+2. Uncomment the user roles,user names in "conf/tomcat-users.xml" file. 
+3. Add new user role, user name for "admin".
+4. Deploy Oviyam2.war into Tomcat "webapps" folder.
